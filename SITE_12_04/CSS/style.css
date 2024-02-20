@@ -1,10 +1,66 @@
+@import url(https://fonts.google.com/share?selection.family=Anta);
 
-body{
-    background-color: black;
-    
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
-    color: wheat;
+nav {
+    display: flex;
+    /* deixa o display flexivel para os elementos */
+    align-items: center;
+    transition: 0.5s;
+    background-color: royalblue;
+    padding: 2%;
+    border: none;
+}
 
+nav ul {
+    display: inline-block;
+    list-style: none;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+    padding-left: 3%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+nav ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+nav ul li:hover {
+    transition: 0.5s;
+    background-color: rgb(233, 41, 41);
+    border: none;
+    color: white;
+    border-radius: 15px;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+}
+
+nav ul ul li {
+    display: block;
+    font-size: 12px;
 }
