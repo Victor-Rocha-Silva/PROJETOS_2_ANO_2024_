@@ -1,66 +1,60 @@
-@import url(https://fonts.google.com/share?selection.family=Anta);
-
 body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-nav {
-    display: flex;
-    /* deixa o display flexivel para os elementos */
-    align-items: center;
-    transition: 0.5s;
-    background-color: royalblue;
-    padding: 2%;
-    border: none;
-}
-
-nav ul {
-    display: inline-block;
-    list-style: none;
-    color: #000;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 150%;
-    padding-left: 75%;
 }
 
-nav ul li {
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#logo {
+    font-size: 24px;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
     display: inline-block;
-    padding: 10px 15px;
-    border-radius: 20px;
-    transition: 0.5s;
+    margin-left: 20px;
 }
 
-nav ul li a {
-    padding: 5px;
+#nav ul li a {
     text-decoration: none;
-    color: #000;
-    display: block;
+    color: #fff;
+    transition: color 0.3s;
 }
 
-nav ul li:hover {
-    transition: 0.5s;
-    background-color: rgb(233, 41, 41);
-    border: none;
-    color: white;
-    border-radius: 15px;
+#nav ul li a:hover {
+    color: #ff0;
 }
 
-nav ul li {
-    position: relative;
-    display: inline-block;
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
 }
 
-nav ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #000;
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: background-color 0.3s;
 }
 
-nav ul ul li {
-    display: block;
-    font-size: 12px;
+.fixed #logo {
+    font-size: 20px;
 }
