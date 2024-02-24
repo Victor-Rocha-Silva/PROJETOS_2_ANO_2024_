@@ -35,7 +35,7 @@ body {
 }
 
 #nav ul li a:hover {
-    color: #ff0;
+    color: red;
 }
 
 .section {
@@ -58,3 +58,15 @@ body {
 .fixed #logo {
     font-size: 20px;
 }
+
+div .text h1{
+    font-size: 200%;
+    margin-left: 1%;
+    display: flexbox;
+}
+
+div .text p{
+    margin-left: 2%;
+    font-size: 150%;
+}
+
