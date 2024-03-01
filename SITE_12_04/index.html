@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Fixo com Mudança de Cor e Logotipo</title>
-    <link rel="stylesheet" href="../SITE_12_04/CSS/style.css">
-    <link rel="shortcut icon" href="../SITE_12_04/IMG/LOGO FINA.png" type="image/x-icon">
-    <script src=".//JS/script.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/logo loja.png" type="image/x-icon">
+    <script src="./assets/js/script.js"></script>
 </head>
+
 <body>
-    <header id="header">
-        <div class="container">
-            <div id="logo">
-                <img src="../SITE_12_04/IMG/LOGO FINA.png" alt="" width="100" height="90">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><img src="./assets/img/logo loja.png" alt="" width="50px"></h1>
             </div>
-            <nav id="nav">
+            <div class="nav-list">
                 <ul>
-                    <li><a href="../SITE_12_04/PAGS/cardapio.html">Cardápio</a></li>
-                    <li><a href="../SITE_12_04/PAGS/historia.html">História</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./PAGS/historia.html" class="nav-link">Historia</a></li>
+                    <li class="nav-item"><a href="./PAGS/cardapio.html" class="nav-link"> Cardapio</a></li>
                 </ul>
-            </nav>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./PAGS/historia.html" class="nav-link">Historia</a></li>
+                <li class="nav-item"><a href="./PAGS/cardapio.html" class="nav-link">Cardapio</a></li>
+            </ul>
         </div>
     </header>
 
     <div class="content">
-        <div id="section1" class="section">Cardápio<</div>
-        <div id="section2" class="section">Cardápio</div>
-        <div id="section3" class="section">Cardápio</div>
-    </div>
+        <div id="section1" class="section">Cardápio<< /div>
+                <div id="section2" class="section">Cardápio</div>
+                <div id="section3" class="section">Cardápio</div>
+        </div>
 
-    <script src="script.js"></script>
+        <footer>
+            <img src="./assets/img/instagram.png" alt="" width="30px">
+            <img src="./assets/img/facebook.png" alt="" width="30px">
+            <img src="./assets/img/whatsapp.png" alt="" width="30px">
+            <p>Victor Rocha Silva, Pedro Campos</p>
+        </footer>
 </body>
+
 </html>
