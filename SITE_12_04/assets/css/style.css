@@ -135,8 +135,6 @@ div .text p {
     font-size: 150%;
 }
 
-footer{
-    display: inline-block;
-    display: flex;
-    justify-content: center;
+footer {
+    text-align: center;
 }
