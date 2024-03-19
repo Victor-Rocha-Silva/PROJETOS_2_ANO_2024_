@@ -15,7 +15,8 @@ body {
     padding: 70px 0;
 }
 
-p, li {
+p,
+li {
     color: #444;
     font-size: 14px;
 }
@@ -24,6 +25,18 @@ p, li {
 header,
 .navbar {
     background-color: #4693b9;
+}
+
+.history h1 {
+    text-align: center;
+}
+
+.history p {
+    font-size: 120%;
+}
+
+.col-md-12 {
+    text-align: center;
 }
 
 #nav-container {
@@ -49,7 +62,7 @@ header,
     text-align: center;
 }
 
-#navbar-links a:hover{
+#navbar-links a:hover {
     transition: 0.5s;
     color: red;
 }
