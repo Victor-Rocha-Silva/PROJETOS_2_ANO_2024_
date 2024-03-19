@@ -1,162 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Etec Burguer</title>
+    <link rel="shortcut icon" href="../assets/img/logo loja.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/img/logo loja.png" type="image/x-icon">
-    <script src="../assets/js/script2.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <!-- Progress Bar -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    link:
 </head>
 
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1><img src="../assets/img/logo loja.png" alt="" width="50px"></h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Historia</a></li>
-                    <li class="nav-item"><a href="./cardapio.html" class="nav-link"> Cardapio</a></li>
-                </ul>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="../assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Historia</a></li>
-                <li class="nav-item"><a href="./cardapio.html" class="nav-link">Cardapio</a></li>
-            </ul>
+        <div class="container" id="nav-container">
+            <!-- adiciona essa class -->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="../assets/img/logo loja.png" alt="hDC Agency">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu" href="../index.html">Home</span></a>
+                        <a class="nav-item nav-link" id="portfolio-menu" href="#">Historia</a>
+                        <a class="nav-item nav-link" id="contact-menu" href="./cardapio.html">Cardapio</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-
-    <div class="content">
-
-        <div class="text">
-
-            <h1>1998-2005: Os Humildes Começos</h1>
-
-            <P>No verão de 1998, em um bairro tranquilo da cidade, Miguel, um apaixonado por hambúrgueres, decidiu
-
-                realizar seu sonho de abrir sua própria hamburgueria. Com suas economias e uma pequena equipe, ele
-
-                inaugurou "Burgueria do Miguel" em uma pequena loja de esquina. Os hambúrgueres eram simples, feitos à
-
-                mão com carne fresca e ingredientes de qualidade.
-
-
-
-                Nos primeiros anos, Miguel e sua equipe trabalharam arduamente para construir uma base de clientes
-
-                fiéis. O boca a boca era a principal forma de marketing, e logo a Burgueria do Miguel tornou-se um ponto
-
-                de encontro popular para os moradores locais em busca de uma refeição deliciosa e reconfortante.</P>
-
-            <h1>2006-2010: Expansão e Reconhecimento</h1>
-
-            <p>Com o passar dos anos, a reputação da Burgueria do Miguel cresceu, atraindo clientes de outros bairros e
-
-                até mesmo de cidades vizinhas. Miguel viu a oportunidade de expandir e abriu uma segunda filial em uma
-
-                área movimentada da cidade.
-
-
-
-                A qualidade e o sabor autêntico dos hambúrgueres ganharam destaque em guias de alimentos locais e nas
-
-                redes sociais emergentes. A Burgueria do Miguel tornou-se conhecida não apenas pela comida, mas também
-
-                pelo serviço acolhedor e pela atmosfera familiar.</p>
-
-            <div id="section1" class="section">Cardápio<< /div>
-
-                    <div id="section2" class="section">Cardápio</div>
-
-                    <div id="section3" class="section">Cardápio</div>
+    <main>
+        <div class="container-fluid">
+            <!-- slide -->
+            <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1"></li>
+                    <li data-target="#mainSlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/img/banner1.png" class="d-block w-100" alt="Projetos de e-commerce">
+                        <!-- tirar classe d-none -->
+                        <div class="carousel-caption d-md-block">
+                            <h2>Quer Comer Um Delicioso Lanche?</h5>
+                                <p>Temos mais de 10 tipos de sabores</p>
+                                <a href="#" class="main-btn">Ver Cardapio</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/banner2.png" class="d-block w-100" alt="Engenharia de software">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Está querendo Querendo Comer nossos Lanches?</h5>
+                                <p>Nossa equipe está pronta para te atender.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/banner3.png" class="d-block w-100" alt="Manutenção em software">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Está buscando Preços dos Lanches?</h5>
+                                <p>Chame No Whatssap</p>
+                                <a href="#" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previsão</span>
+                </a>
+                <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">proximo</span>
+                </a>
             </div>
-
-            <div class="text">
-
-                <h1>2011-2015: Inovação e Desafios</h1>
-
-                <p>Com o avanço da tecnologia e a crescente concorrência, Miguel percebeu a importância de inovar para
-                    se
-
-                    manter relevante. Ele introduziu novos sabores e opções de hambúrgueres, incorporando ingredientes
-
-                    locais e sazonais para atrair diferentes paladares. <br>
-
-
-
-                    No entanto, esse período também trouxe desafios, com a necessidade de lidar com aumentos nos custos
-                    dos
-
-                    ingredientes e a concorrência de grandes cadeias de fast food. A Burgueria do Miguel manteve sua
-
-                    identidade única, focando na qualidade e na experiência do cliente para superar esses obstáculos.
-                </p>
-
-                <h1>2016-2020: Sustentabilidade e Comunidade</h1>
-
-                <p>Consciente da importância da sustentabilidade e do impacto ambiental, Miguel fez esforços para tornar
-                    sua
-
-                    hamburgueria mais eco-friendly. Ele implementou práticas de reciclagem, reduziu o desperdício de
-
-                    alimentos e procurou fornecedores locais que compartilhassem seus valores. <br>
-
-
-
-                    Além disso, a Burgueria do Miguel se tornou uma parte ativa da comunidade, apoiando eventos locais,
-
-                    patrocinando equipes esportivas juvenis e colaborando com organizações sem fins lucrativos. Essa
-                    conexão
-
-                    com a comunidade fortaleceu os laços com os clientes e solidificou a reputação da hamburgueria como
-                    um
-
-                    negócio que se importa.</p>
-
-            </div>
-
-            <div class="text">
-
-                <h1>2021-Atualmente: Adaptando-se à Mudança </h1>
-
-                <p>Com a pandemia global de COVID-19, a Burgueria do Miguel enfrentou desafios sem precedentes. Miguel e
-
-                    sua equipe rapidamente adaptaram o negócio para oferecer opções de entrega e take-away,
-
-                    implementando medidas rigorosas de segurança e higiene para proteger clientes e funcionários. <br>
-
-                    Apesar dos desafios, a Burgueria do Miguel permaneceu resiliente, encontrando novas maneiras de
-
-                    servir seus clientes e apoiar a comunidade durante tempos difíceis. <br>
-
-                    Hoje, mais de duas décadas após sua inauguração, a Burgueria do Miguel continua a ser um destino
-                    popular para os amantes de hambúrgueres, combinando tradição, qualidade e inovação em cada mordida.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <footer>
-            <img src="../assets/img/instagram.png" alt="" width="30px">
-            <img src="../assets/img/facebook.png" alt="" width="30px">
-            <img src="../assets/img/whatsapp.png" alt="" width="30px">
-            <p>Victor Rocha Silva, Pedro Campos</p>
-        </footer>
-</body>
-
-</html>
