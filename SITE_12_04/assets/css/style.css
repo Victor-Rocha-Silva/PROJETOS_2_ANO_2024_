@@ -15,8 +15,7 @@ body {
     padding: 15px 0;
 }
 
-p,
-li {
+p,li {
     color: #444;
     font-size: 14px;
 }
@@ -24,7 +23,7 @@ li {
 /* Barra de navegação */
 header,
 .navbar {
-    background-color: #4693b9;
+    background-color: #f13e47;
 }
 
 .history h1 {
@@ -96,14 +95,14 @@ header,
 }
 
 #mainSlider .carousel-caption p {
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 300vh;
     margin-bottom: 100px;
     color: #FFF;
 }
 
 .main-btn {
-    background-color: #4693b9;
+    background-color: #f13e47;
     color: #FFF;
     text-transform: uppercase;
     width: 200px;
@@ -118,11 +117,11 @@ header,
     text-decoration: none;
     color: #FFF;
     background-color: transparent;
-    border-color: #3EC1D5;
+    border-color: #f13e47;
 }
 
 .carousel-indicators .active {
-    background-color: #65DAF9;
+    background-color: #f13e47;
 }
 
 /* Sobre a empresa */
@@ -164,7 +163,7 @@ header,
 }
 
 #about-list i {
-    color: #65DAF9;
+    color: #f13e47;
     margin-right: 15px;
 }
 
@@ -193,7 +192,7 @@ header,
 
 .service-box:hover>i,
 .service-box:hover>h4 {
-    color: #4693b9;
+    color: #f13e47;
 }
 
 /* Dados */
@@ -269,8 +268,8 @@ header,
 }
 
 #apply-btn:hover {
-    border-color: #65DAF9;
-    background-color: #65DAF9;
+    border-color: #f13e47;
+    background-color: #f13e47;
 }
 
 /* Portfólio */
@@ -300,8 +299,8 @@ header,
 #portfolio-area .filter-btn.active,
 #portfolio-area .filter-btn:hover {
     color: #FFF;
-    border: 1px solid #65DAF9;
-    background-color: #65DAF9;
+    border: 1px solid #f13e47;
+    background-color: #f13e47;
 }
 
 /* Boletim */
@@ -320,7 +319,7 @@ header,
     border-radius: 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border: 1px solid #65DAF9;
+    border: 1px solid #f13e47;
     display: inline;
     box-sizing: border-box;
     width: 40%;
@@ -330,8 +329,8 @@ header,
 #news-btn {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: 1px solid #4693b9;
-    background-color: #4693b9;
+    border: 1px solid #f13e47;
+    background-color: #f13e47;
     color: #FFF;
     text-transform: uppercase;
     height: 40px;
@@ -342,8 +341,8 @@ header,
 }
 
 #news-btn:hover {
-    background-color: #FFF;
-    color: #65DAF9;
+    background-color: #4693b9;
+    color: #f13e47;
 }
 
 /* chamada para ação */
@@ -375,7 +374,7 @@ header,
 
 #call-area #call-btn {
     background-color: #FFF;
-    color: #65DAF9;
+    color: #f13e47;
     font-weight: bold;
     margin-left: 30px;
     font-size: 20px;
@@ -392,7 +391,7 @@ header,
 .contact-box {
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #3EC1D5;
+    border-bottom: 1px solid #f13e47;
 }
 
 .contact-box i {
