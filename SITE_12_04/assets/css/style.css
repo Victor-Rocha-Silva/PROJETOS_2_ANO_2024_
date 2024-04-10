@@ -118,11 +118,11 @@ header,
     text-decoration: none;
     color: #FFF;
     background-color: transparent;
-    border-color: #f13e47;
+    border-color: #4693b9;
 }
 
 .carousel-indicators .active {
-    background-color: #f13e47;
+    background-color: #4693b9;
 }
 
 /* Sobre a empresa */
@@ -164,7 +164,7 @@ header,
 }
 
 #about-list i {
-    color: #f13e47;
+    color: #4693b9;
     margin-right: 15px;
 }
 
@@ -300,8 +300,8 @@ header,
 #portfolio-area .filter-btn.active,
 #portfolio-area .filter-btn:hover {
     color: #FFF;
-    border: 1px solid #f13e47;
-    background-color: #f13e47;
+    border: 1px solid #4693b9;
+    background-color: #4693b9;
 }
 
 /* Boletim */
@@ -330,8 +330,8 @@ header,
 #news-btn {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: 1px solid #f13e47;
-    background-color: #f13e47;
+    border: 1px solid #4693b9;
+    background-color: #4693b9;
     color: #FFF;
     text-transform: uppercase;
     height: 40px;
@@ -349,7 +349,7 @@ header,
 /* chamada para ação */
 
 #call-area {
-    background-color: #65DAF9;
+    background-color: #4693b9;
     text-transform: uppercase;
 }
 
@@ -375,7 +375,7 @@ header,
 
 #call-area #call-btn {
     background-color: #FFF;
-    color: #f13e47;
+    color: #4;
     font-weight: bold;
     margin-left: 30px;
     font-size: 20px;
@@ -409,7 +409,7 @@ header,
 
 .contact-tile {
     font-weight: bold;
-    color: #3EC1D5;
+    color: #4693b9;
 }
 /* responsividade */
 @media(max-width: 768px) {
