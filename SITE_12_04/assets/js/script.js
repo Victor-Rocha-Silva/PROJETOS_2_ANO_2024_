@@ -1,58 +1,65 @@
 $(document).ready(function () {
-    // Progress bar
+    // barra progressiva
+    // Seleciona o container para o círculo A
     let containerA = document.getElementById("circleA");
+    // Cria um novo círculo de progresso
     let circleA = new ProgressBar.Circle(containerA, {
-        color: '#65DAF9',
-        strokeWidth: 8,
-        duration: 1400,
-        from: { color: '#aaa' },
-        to: { color: '#65DAF9' },
-        step: function (state, circle) {
-            circle.path.setAttribute('stroke', state.color);
-            var value = Math.round(circle.value() * 60);
-            circle.setText(value);
+        color: '#65DAF9', // Cor círculo
+        strokeWidth: 8, // Largura da linha círculo
+        duration: 1400, // Duração da animação em milissegundos
+        from: { color: '#aaa' }, // Cor inicial círculo
+        to: { color: '#65DAF9' }, // Cor final  círculo
+        step: function (state, circle) { // Função executada a cada passo da animação
+            circle.path.setAttribute('stroke', state.color); // Define a cor da do círculo
+            var value = Math.round(circle.value() * 60); // Calcula o valor atual
+            circle.setText(value); // Define o texto exibido do círculo
         }
     });
+    // barra Progressiva para o B
     let containerB = document.getElementById("circleB");
     let circleB = new ProgressBar.Circle(containerB, {
-        color: '#65DAF9',
-        strokeWidth: 8,
-        duration: 1600,
-        from: { color: '#aaa' },
-        to: { color: '#65DAF9' },
-        step: function (state, circle) {
-            circle.path.setAttribute('stroke', state.color);
-            var value = Math.round(circle.value() * 254);
-            circle.setText(value);
+        color: '#65DAF9', // Cor do círculo
+        strokeWidth: 8, // Largura da linha do círculo
+        duration: 1600, // Duração em milissegundos
+        from: { color: '#aaa' }, // Cor inicial  círculo
+        to: { color: '#65DAF9' }, // Cor final  círculo
+        step: function (state, circle) { // Função executada a cada passo da animação
+            circle.path.setAttribute('stroke', state.color); // Define a cor da linha do círculo
+            var value = Math.round(circle.value() * 254); // Calcula o valor atual
+            circle.setText(value); // Define o texto exibido do círculo
         }
     });
+
+    // barra progressiva para o círculo C
     let containerC = document.getElementById("circleC");
     let circleC = new ProgressBar.Circle(containerC, {
-        color: '#65DAF9',
-        strokeWidth: 8,
-        duration: 1800,
-        from: { color: '#aaa' },
-        to: { color: '#65DAF9' },
-        step: function (state, circle) {
-            circle.path.setAttribute('stroke', state.color);
-            var value = Math.round(circle.value() * 32);
-            circle.setText(value);
+        color: '#65DAF9', // Cor do círculo
+        strokeWidth: 8, // Largura da linha do círculo
+        duration: 1800, // Duração em milissegundos
+        from: { color: '#aaa' }, // Cor inicial do círculo
+        to: { color: '#65DAF9' }, // Cor final do círculo
+        step: function (state, circle) { // Função executada a cada passo da animação
+            circle.path.setAttribute('stroke', state.color); // Define a cor da linha do círculo
+            var value = Math.round(circle.value() * 32); // Calcula o valor atual
+            circle.setText(value); // Define o texto exibido círculo
         }
     });
+
+    // barra progressiva para o círculo D
     let containerD = document.getElementById("circleD");
     let circleD = new ProgressBar.Circle(containerD, {
-        color: '#65DAF9',
-        strokeWidth: 8,
-        duration: 2000,
-        from: { color: '#aaa' },
-        to: { color: '#65DAF9' },
-        step: function (state, circle) {
-            circle.path.setAttribute('stroke', state.color);
-            var value = Math.round(circle.value() * 5423);
-            circle.setText(value);
+        color: '#65DAF9', // Cor do círculo
+        strokeWidth: 8, // Largura da linha do círculo
+        duration: 2000, // Duração em milissegundos
+        from: { color: '#aaa' }, // Cor inicial do círculo
+        to: { color: '#65DAF9' }, // Cor final do círculo
+        step: function (state, circle) { // Função executada a cada passo da animação
+            circle.path.setAttribute('stroke', state.color); // Define a cor da linha do círculo
+            var value = Math.round(circle.value() * 5423); // Calcula o valor atual
+            circle.setText(value); // Define o texto exibido do círculo
         }
     });
-    // iniciando loaders quando a usuário chegar no elemento
+    // iniciando carregamento quando a usuário chegar no elemento
     let dataAreaOffset = $('#data-area').offset();
     // stop serve para a animação não carregar mais que uma vez
     let stop = 0;
@@ -72,7 +79,7 @@ $(document).ready(function () {
         $('#data-area').parallax({ imageSrc: 'img/cidadeparallax.png' });
         $('#apply-area').parallax({ imageSrc: 'img/pattern.png' });
     }, 200);
-    // Filtro portfólio
+    // Filtro do portfólio
     $('.filter-btn').on('click', function () {
         let type = $(this).attr('id');
         let boxes = $('.project-box');

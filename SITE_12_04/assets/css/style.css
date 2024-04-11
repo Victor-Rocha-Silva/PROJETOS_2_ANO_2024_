@@ -21,7 +21,6 @@ li {
     font-size: 14px;
 }
 
-/* Barra de navegação */
 header,
 .navbar {
     background-color: #f13e47;
@@ -81,10 +80,13 @@ header,
     padding: 0%;
 }
 
+#mainslider .carousel-inner img {
+    opacity: 0%;
+}
+
 #mainSlider .carousel-inner,
 #mainSlider .carousel-item {
     height: 80vh;
-
 }
 
 #mainSlider .carousel-caption {
@@ -119,14 +121,12 @@ header,
     text-decoration: none;
     color: #FFF;
     background-color: transparent;
-    border-color: #4693b9;
+    border-color: #f13e47;
 }
 
 .carousel-indicators .active {
-    background-color: #4693b9;
+    background-color: #f13e47;
 }
-
-/* Sobre a empresa */
 
 #about-area {
     background-color: #F9F9F9;
@@ -140,7 +140,6 @@ header,
 }
 
 .main-title::after {
-    content: "";
     border-top: 2px solid #333;
     width: 15%;
     position: absolute;
@@ -162,6 +161,7 @@ header,
 
 #about-list li {
     line-height: 30px;
+    /* Define altura da linha */
 }
 
 #about-list i {
@@ -169,35 +169,20 @@ header,
     margin-right: 15px;
 }
 
-/* Serviços */
-
 .service-box {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.service-box i,
-.service-box h4 {
-    transition: .5s;
-}
-
-.service-box i {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #444;
-}
 
 .service-box h4 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.service-box:hover>i,
 .service-box:hover>h4 {
     color: #4693b9;
 }
-
-/* Dados */
 
 .circle-box div {
     padding: 0 40px;
@@ -215,13 +200,9 @@ header,
     margin-top: 20px;
 }
 
-/* Time */
-
 .card-body {
     text-align: center;
 }
-
-/* Trabalhe conosco */
 
 #apply-area {
     height: 500px;
@@ -253,8 +234,6 @@ header,
     background-color: #4693b9;
 }
 
-/* Portfólio */
-
 .project-box {
     margin-bottom: 30px;
 }
@@ -271,6 +250,7 @@ header,
     text-transform: none;
     margin: 0 15px;
     min-width: 100px;
+    /* define a largura minima */
     width: auto;
     height: 40px;
     line-height: 40px;
@@ -283,8 +263,6 @@ header,
     border: 1px solid #4693b9;
     background-color: #4693b9;
 }
-
-/* Boletim */
 
 #news-area {
     text-align: center;
@@ -326,8 +304,6 @@ header,
     color: #4693b9;
 }
 
-/* chamada para ação */
-
 #call-area {
     background-color: #4693b9;
     text-transform: uppercase;
@@ -350,6 +326,7 @@ header,
     height: 60px;
     line-height: 60px;
     letter-spacing: 2px;
+    /* Define espaçamento entre as linhas */
     display: inline;
 }
 
@@ -362,8 +339,6 @@ header,
     width: auto;
     letter-spacing: 2px;
 }
-
-/* rodapé */
 
 #contact-area {
     text-align: center;
@@ -392,60 +367,67 @@ header,
     color: #4693b9;
 }
 
-/* responsividade */
-@media(max-width: 768px) {
+@media(max-width: 600px) {
 
-    /* geral */
     .container {
         padding: 20px 0;
     }
 
-    /* slide */
+    /* Ajusta a altura do carousel e dos itens do carousel */
     #mainSlider .carousel-inner,
     #mainSlider .carousel-item {
         height: auto;
     }
 
+    /* Ajusta o tamanho do título */
     #mainSlider .carousel-caption h2 {
         font-size: 28px;
     }
 
+    /* Ajusta o tamanho do parágrafo */
     #mainSlider .carousel-caption p {
         font-size: 18px;
         margin-bottom: 40px;
     }
 
+    /* Ajusta a posição horizontal */
     .carousel-caption {
         left: 10%;
         right: 10%;
     }
 
-    .col-md-4-project-box.dev{
+    /* Ajusta a margem dos elementos */
+    .col-md-4-project-box.dev {
         margin-right: 25%;
     }
 }
 
+/* Define tamanho para telas */
 @media(max-width: 425px) {
 
-    /* slide */
+    /* Ajusta a margem do carousel */
     #mainSlider {
         margin-top: 90px;
     }
 
+    /* Ajusta a posição vertical*/
     #mainSlider .carousel-caption {
         top: 5%;
     }
 
+    /* Ajusta o tamanho do título*/
     #mainSlider .carousel-caption h2 {
         font-size: 18px;
         margin-bottom: 40px;
     }
 
+    /* Esconde o parágrafo*/
     #mainSlider .carousel-caption p {
         display: none;
     }
 
+    /* Ajusta o tamanho do botão principal*/
     .carousel-caption .main-btn {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
