@@ -23,7 +23,7 @@ li {
 
 header,
 .navbar {
-    background-color: #f13e47;
+    background-color: #EA5600;
 }
 
 .history h1 {
@@ -64,7 +64,7 @@ header,
 
 #navbar-links a:hover {
     transition: 0.5s;
-    color: #4693b9;
+    color: #515151;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -106,7 +106,7 @@ header,
 }
 
 .main-btn {
-    background-color: #f13e47;
+    background-color: #EA5600;
     color: #FFF;
     text-transform: uppercase;
     width: 200px;
@@ -119,13 +119,13 @@ header,
 
 .main-btn:hover {
     text-decoration: none;
-    color: #FFF;
+    color: #fff;
     background-color: transparent;
-    border-color: #f13e47;
+    border-color: #EA5600;
 }
 
 .carousel-indicators .active {
-    background-color: #f13e47;
+    background-color: #EA5600;
 }
 
 #about-area {
@@ -149,7 +149,7 @@ header,
 
 .about-title {
     font-size: 17px;
-    color: #444;
+    color: #FFF;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -194,7 +194,7 @@ header,
 }
 
 #data-area p {
-    color: #FFF;
+    color: #515151;
     text-align: center;
     font-size: 26px;
     margin-top: 20px;
