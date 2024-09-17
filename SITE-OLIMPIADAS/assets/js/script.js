@@ -1,4 +1,4 @@
-$(document).ready(function () {
+    $(document).ready(function () {
     // barra progressiva
     // Seleciona o container para o círculo A
     let containerA = document.getElementById("circleA");
@@ -81,7 +81,7 @@ $(document).ready(function () {
     }, 200);
     // Filtro do portfólio
     $('.filter-btn').on('click', function () {
-        let type = $(this).attr('id');
+        let type = $(this).attr('id');  
         let boxes = $('.project-box');
         $('.main-btn').removeClass('active');
         $(this).addClass('active');
