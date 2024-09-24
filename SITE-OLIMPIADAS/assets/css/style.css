@@ -171,6 +171,13 @@ header,
     font-weight: bold;
 }
 
+.about-title1{
+    font-size: 17px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 #about-list {
     list-style: none;
     padding-left: 0;
